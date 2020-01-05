@@ -1,0 +1,36 @@
+.chat-main
+  .top
+    .top__left-box
+      .top__left-box__group-name
+        g group
+      .top__left-box__members
+        yuto
+    .top__edit-btn
+      = link_to 'Edit','#'
+  .middle
+    .messages
+      .messages__message
+        .messages__message__info
+          .messages__message__info__member
+            masa
+          .messages__message__info__date
+            2019/11/20(wed) 17:43:01
+        .messages__message__text
+          おはよう
+      .messages__message
+        .messages__message__info
+          .messages__message__info__member
+            masa
+          .messages__message__info__date
+            2019/11/20(wed) 17:45:30
+        .messages__message__text
+          今日は夜から雨
+  .bottom
+    .form
+      %form.new_message
+        .input-box
+          %input{type: "text", class: "input-box__text",placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file",class: "input-box__image__file"}
+        %input{type: "submit", class: "submit-btn"}
