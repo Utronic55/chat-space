@@ -33,7 +33,7 @@
 - belongs_to:user
 - belongs_to:group
 
-## members table
+## group_user table
 |Column|Type|Options|
 |------|----|-------|
 |group_id|integer|null:false,foreign_key: true|
